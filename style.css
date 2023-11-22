@@ -12,6 +12,11 @@ body {
     width: 500px;
 }
 
+#info h1,
+#info h2 {
+    margin: 5px 0;
+}
+
 #info {
     color: #000000;
     font-size: 20px;
@@ -56,9 +61,11 @@ body {
     height: auto;
 }
 
-#info h1,
-#info h2 {
-    margin: 5px 0; /* Adjust the top and bottom margins */
+footer {
+    padding: 20px;
+    background-color: #4b9f9b;
+    color: #fff;
+    text-align: center;
 }
 
 /* Media queries pour rendre le site responsive */
