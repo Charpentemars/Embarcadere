@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+#logo img {
+    width: 500px;
+}
+
+#info {
+    color: #000000;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#button {
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b9f9b;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #4b9f9b;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #3a7976;
+    border: 1px solid #3A7976FF;
+}
+
+#imgs {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 500px; /* Réglage de la largeur maximale */
+    margin-bottom: 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+#info h1,
+#info h2 {
+    margin: 5px 0; /* Adjust the top and bottom margins */
+}
+
+/* Media queries pour rendre le site responsive */
+
+@media screen and (min-width: 768px) {
+    #imgs {
+        padding: 20px;
+    }
+
+    .img-container {
+        width: 48%; /* Deux images par ligne à partir de 768px */
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px; /* Limite la largeur du conteneur à 960px à partir de 992px */
+        margin: 0 auto; /* Centre le conteneur */
+    }
+}
