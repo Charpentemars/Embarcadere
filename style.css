@@ -8,10 +8,6 @@ body {
     text-align: center;
 }
 
-#logo img {
-    width: 500px;
-}
-
 #info h1,
 #info h2 {
     margin: 5px 0;
@@ -20,7 +16,7 @@ body {
 #info {
     color: #000000;
     font-size: 20px;
-    padding: 10px;
+    text-align: center;
 }
 
 #button {
@@ -68,7 +64,34 @@ footer {
     text-align: center;
 }
 
+#logo img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Media queries pour rendre le site responsive */
+
+@media screen and (min-width: 576px) {
+    #imgs {
+        padding: 20px;
+    }
+
+    .img-container {
+        width: 48%; /* Deux images par ligne à partir de 576px */
+        margin-bottom: 20px;
+    }
+
+    .container {
+        max-width: 540px; /* Limite la largeur du conteneur à 540px à partir de 576px */
+        margin: 0 auto; /* Centre le conteneur */
+    }
+
+    #logo img {
+        width: 100%;
+    }
+
+}
 
 @media screen and (min-width: 768px) {
     #imgs {
@@ -78,6 +101,11 @@ footer {
     .img-container {
         width: 48%; /* Deux images par ligne à partir de 768px */
         margin-bottom: 20px;
+    }
+
+.container {
+        max-width: 720px; /* Limite la largeur du conteneur à 720px à partir de 768px */
+        margin: 0 auto; /* Centre le conteneur */
     }
 }
 
